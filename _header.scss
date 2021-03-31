@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+body {
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   padding: 0;
+   background: #000;
+}
+.hero {
+   height: 100vh;
+   overflow-y: hidden;
+   #myVideo {
+      width: 100%;
+   }
+   .hero-wrapper {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 0;
+      right: 0;
+      .topBar {
+         padding-top:50px;
+         .container {
+            display: flex;
+            justify-content: space-between;
+            .logo {
+               img {
+                  width:85px;
+                  line-height: 0;
+                  vertical-align: top;
+               }
+               h2 {
+                  vertical-align:bottom;
+                  display: inline-block;
+                  text-align:center;
+                  font-size:40px;
+                  color:#fff;
+                  line-height: 30px;
+                  span {
+                     font-size:20px;
+                  }
+               }
+            }
+            .navBar {
+               ul {
+                  padding-bottom: 2px;
+                  li {
+                     display: inline-block;
+                     font-size:16px;
+                     a {
+                        color:#fff;
+                        text-decoration: none;
+                        list-style: none;
+                        margin-left: 20px;
+                        &:hover {
+                           border-bottom:1px solid #fff;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+      .bottomBar {
+         .container {
+            .topHeading {
+               width: 70%;
+               h1 {
+                  color:#fff;
+                  margin-top: 50px;
+                  padding-top: 50px;
+                  font-size:80px;
+                  font-weight: 400;
+               }
+               span {
+                  color:rgba(255,255,255,.3);
+               }
+            }
+            .btn {
+               border: 0;
+               border-radius: 0;
+               margin-top: 25px;
+               transition: 0.2s all ease;
+               background-color: #da0e2b;
+               color:#fff;
+               text-decoration: none;
+               padding: 10px 30px;
+               &:hover {
+                  background: transparent;
+                  border:1px solid #fff;
+                  margin-top: 35px;
+               }
+            }
+         }
+      }
+   }
+}
+@media only screen and (max-width:992px){
+   .topHeading {
+      width:90%!important;
+      h1 {
+         font-size:60px!important;
+         padding-top:0!important;
+         margin:30px 0;
+      }
+   }
+}
+@media only screen and (max-width:600px){
+   .hero {
+      height: 100vh;
+      overflow-y: hidden;
+      #myVideo {
+         display:none;
+         }
+      }
+   .topBar {
+      padding:10px 0 0!important;
+      .container {
+         .logo {
+            img {
+               width: 60px!important;
+            }
+            h2 {
+               font-size:22px!important;
+            }
+         }
+      }
+   }
+   .topHeading {
+      h1 {
+         font-size:40px!important;
+         text-align: center;
+      }
+   }
+}
+@media only screen and (max-width:480px){
+   .topBar {
+      .container {
+         .logo {
+            img {
+               margin-top: 10px;
+               width:50px !important;
+            }
+            h2 {
+               font-size:20px!important;
+            }
+         }
+      }
+   }
+}

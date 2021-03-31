@@ -1,0 +1,202 @@
+main {
+   .about {
+      background:#000;
+      padding: 70px 0;
+      .container {
+         .row {
+            .col-5 {
+               padding:0px 20px 20px 0px;
+               img {
+                  position:relative;
+                  z-index: 1000;
+               }
+               .dottedFrame {
+                  border: 1.5px dashed #DA0E28;
+                  width: 150px;
+                  height: 200px;
+                  position:absolute;
+                  right: 0px;
+                  bottom: 0px;
+                  z-index: 0;
+               }
+            }
+            .col-7 {
+               h2 {
+                  color:#fff;
+               }
+               h4, p {
+                  color:rgba(255, 255, 255, .4);
+               }
+            }
+         }
+      }
+   }
+   .services {
+      background:#000;
+      padding: 50px;
+      .container {
+         .row {
+            h2 {
+               text-align:center;
+               color:#fff;
+               font-size:40px;
+               padding: 12px;
+            }
+            .underline {
+               border-bottom:4px solid #DA0E28;
+               width:100px;
+               margin: 0 auto;
+            }
+            p {
+               padding: 15px;
+               text-align: center;
+               color:rgba(255,255,255,0.3);
+            }
+            .col-4 {
+               text-align: center;
+               img {
+                  margin: 10px auto;
+               }
+            }
+         }
+      }
+   }
+   .Featured {
+      padding: 30px 0;
+      background: rgba(0, 0, 0, .97);
+      color:#fff;
+      .underline {
+         border-bottom:2px solid #DA0E28;
+         width:100px;
+         margin:20px 0;
+      }
+      .container {
+         .col-6 {
+            p {
+               color:rgba(255, 255, 255, .5);
+            }
+         }
+         .col-3 {
+            .btn {
+               border: 0;
+               border-radius: 0;
+               margin-top: 25px;
+               transition: 0.2s all ease;
+               background-color: #da0e2b;
+               color:#fff;
+               text-decoration: none;
+               padding: 10px 30px;
+               &:hover {
+                  background: transparent;
+                  border:1px solid #fff;
+                  margin-top: 35px;
+               }
+            }
+         }
+      }
+   }
+   .gallery {
+      background:#000;
+      color:#fff;
+      .container {
+         padding:40px 0;
+         .row {
+            .col-4 {
+               padding:10px;
+            }
+         }
+      }
+   }
+   .ready {
+      background:#da0e2b;
+      color:#fff;
+      padding:80px 0;
+      text-align:center;
+      h2 {
+         font-size:45px;
+         font-weight: 900;
+         word-spacing: 0;
+         letter-spacing: 0;
+         span {
+            color:#000;
+            text-decoration: underline;
+         }
+      }
+   }
+   .contact {
+      padding:40px 0;
+      background:#000;
+      color:#fff;
+      h2 {
+         font-size:65px;
+         text-align:center;
+         padding:40px 0 0px;
+      }
+      .underline {
+         width:120px;
+         margin:0px auto 60px;
+         border-bottom:4px solid #da0e2b;
+
+      }
+      label {
+         padding:10px 0;
+         font-size: 25px;
+         span {
+            color:#da0e2b;
+         }
+      }
+      input {
+         background:#000;
+         border-width:1px;
+         border:1px solid #fff;
+         border-style:groove;
+         padding:5px;
+         outline:0px;
+         box-shadow: 0;
+         color:#da0e2b;
+         &:hover {
+            border:1px solid #fff;
+         }
+      }
+      textarea {
+         background:#000;
+         padding:5px;
+         color:#da0e2b;
+         width:100%;
+         &:hover {
+            border:1px solid #fff;
+         }
+      }
+      .btn {
+         border: 0;
+         border-radius: 0;
+         margin-top: 25px;
+         transition: 0.2s all ease;
+         background-color: #da0e2b;
+         color:#fff;
+         text-decoration: none;
+         padding: 10px 30px;
+         &:hover {
+            background: transparent;
+            border:1px solid #fff;
+            margin-top: 35px;
+         }
+      }
+   }
+}
+@media only screen and (max-width:480px){
+   main {
+      .about {
+         padding:0 0;
+      }
+      .services {
+         padding:0;
+         img {
+            width:90px;
+         }
+         h2 {
+            font-size:35px!important;
+         }         
+      }
+   }
+}
